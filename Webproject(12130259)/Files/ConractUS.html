@@ -1,0 +1,131 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>12130259</title>
+  
+</head>
+<body>
+    
+    <form>
+        <tr><td>
+        <table><div class="input">
+        <input type="email" required="required">
+        <label>EMAIL</label>
+        <i></i></td></tr>
+    </div>
+    <tr><td>
+    <div class="input">
+        <input type="text" required="required">
+        <label>Comment</label>
+        <i></i></td></tr>
+
+    </div>
+ <tr>
+    <div><td colspan="2" style="text-align:center;  color: #fff;"><input type="submit" value="Send" style="  color: #fff;"> </td>
+</tr></div></table></form>
+    
+    <footer >
+          <p>Copyright &copy; 2023 <strong>Mohammadbaqer attwi</strong>
+        Student ID: <strong>12130259</strong>
+         Instructor: <strong>Dr.Samira Klyalet(liu)</strong></p>
+      </footer>
+      
+      
+</body>
+  <style>
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  background-color: #000000;
+  color: white;
+  text-align: center;
+  direction: rtl;
+  float: right;
+}
+
+
+
+        *{
+            box-sizing: border-box;
+
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #000;
+            min-height: 100vh;
+        }
+        
+     
+        
+        form{
+            position: absolute;
+           
+            flex-direction: column;
+            background: #000;
+            z-index: 10;
+        }
+
+        .input{
+            position: relative;
+            margin-top:35px ;
+            width: 300px;
+        }
+        
+        input{
+            position: relative;
+            padding: 20px 10px 10px;
+            width: 100%;
+            color: #222;
+            background: transparent;
+            font-size: 1em;
+            letter-spacing: 0.05em;
+            border: none;
+            outline: none;
+            z-index: 10;
+        }
+        
+        label{
+            position: absolute;
+            left: 0;
+            padding: 20px 10px 10px;
+            color: #fff;
+            font-size: 1em;
+            letter-spacing: 0.05em;
+            pointer-events: none;
+            transition: 0.5s;
+        }
+        
+        input:valid ~ label,input:focus ~ label{
+            color: #fff;
+            font-size: 0.7em;
+            transform: translateY(-34px);
+         }
+        
+         i{
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 2px;
+            width: 100%;
+            background: linear-gradient(45deg,#f00,#00ccff);
+            border-radius: 4px;
+            pointer-events: none;
+            z-index: 9;
+            transition: 0.5s;
+         }
+        
+         input:valid ~ i,input:focus ~ i{
+            height: 44px;
+         }
+
+</style>
+</html>

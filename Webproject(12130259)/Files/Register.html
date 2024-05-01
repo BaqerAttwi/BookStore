@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>baqerattwi</title>
+  <meta charset="utf-8">
+</head>
+<body>
+  <nav>
+		<div class="navbar">
+		  <div class="container1 nav-container1">
+			  <input class="checkbox" type="checkbox" name="" id="" />
+			  <div class="hamburger-lines">
+				<span class="line line1"></span>
+				<span class="line line2"></span>
+				<span class="line line3"></span>
+			  </div>  
+			<div class="logo">
+			  <h1>𝕭𝖔𝖔𝓴 𝕾𝖙𝖔𝖗𝖊</h1>
+			</div>
+			<div class="menu-items">
+			  <li><a href="index.html">Home</a></li>
+			  <li><a href="Register.html">Regester/signin</a></li>
+			  <li><a href="prices.html">prices</a></li>
+			  <li><a href="ConractUS.html">contact</a></li>
+			</div>
+		  </div>
+		</div>
+	  </nav>
+  <form>
+        <table width=350 border="2px">
+            <tr>
+                <td> First Name </td>
+                <td ><i><input type="text" name="fname"></td>
+                </i>  </tr>
+            <tr>
+            <tr>
+                <td> Last Name </td>
+                <td><input type="text" name="lname"></td>
+            </tr>
+            <tr>
+              <td> Email </td>
+              <td><input type="text" name="fname"></td>
+          </tr>
+            <tr>
+                <td rowspan="2"> Gender </td>
+                <td><input type="radio" name="gender" value="M"> Male</td>
+            </tr>
+            <tr>
+          
+                <td><input type="radio" name="gender" value="F"> Female</td>
+            </tr>
+            <tr>
+                <td> Country </td>
+                <td><select>
+                    <option>Lebanon</option>
+                    <option>Syria</option>
+                    <option>Jordan</option>
+                </select></td>
+            </tr>
+         
+              <tr>
+                  <td colspan="2" style="text-align:center"><input type="submit" value="Send"> </td>
+              </tr>
+        </table>
+    </form>
+
+	</div>
+</body>
+<style>
+
+.navbar {
+  width: 100%;
+  box-shadow: 0 1px 4px rgba(19, 10, 139, 0.392);
+  margin-bottom: 2%;
+}
+
+.nav-container1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 62px;
+}
+
+.navbar .menu-items {
+  display: flex;
+}
+
+.navbar .nav-container1 li {
+  list-style: none;
+}
+
+.navbar .nav-container1 a {
+  text-decoration: none;
+  color: #fffffff8;
+  font-weight: 500;
+  font-size: 1.2rem;
+  padding: 0.7rem;
+}
+
+.navbar .nav-container1 a:hover{
+    font-weight: bolder;
+    color: rgba(243, 53, 53, 0.984);
+}
+
+.nav-container1 {
+  display: block;
+  position: relative;
+  height: 60px;
+}
+
+.nav-container1 .checkbox {
+  position: absolute;
+  display: block;
+  height: 32px;
+  width: 32px;
+  top: 20px;
+  right: 20px;
+  z-index: 5;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.nav-container1 .hamburger-lines {
+  display: block;
+  height: 26px;
+  width: 32px;
+  position: absolute;
+  top: 17px;
+  right: 20px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+table{
+  align-self: center;
+  align-items: center;
+  margin: 0%;
+  padding: 0%;
+}
+.nav-container1 .hamburger-lines .line {
+  display: block;
+  height: 4px;
+  width: 100%;
+  border-radius: 10px;
+  background: #00a2ff;
+}
+
+.nav-container1 .hamburger-lines .line1 {
+  transform-origin: 0% 0%;
+  transition: transform 0.4s ease-in-out;
+}
+
+.nav-container1 .hamburger-lines .line2 {
+  transition: transform 0.2s ease-in-out;
+}
+
+.nav-container1 .hamburger-lines .line3 {
+  transform-origin: 0% 100%;
+  transition: transform 0.4s ease-in-out;
+}
+
+.navbar .menu-items {
+  padding-top: 120px;
+  box-shadow: inset 0 0 2000px rgba(195, 16, 123, 0.5);
+  height: 100vh;
+  width: 100%;
+  transform: translate(-150%);
+  
+  flex-direction: column;
+  margin-left: -40px;
+  padding-left: 50px;
+  transition: transform 0.5s ease-in-out;
+  text-align:right;
+}
+
+.navbar .menu-items li {
+  margin-bottom: 1.2rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  display: inline-block;
+}
+
+.logo {
+  position: absolute;
+  top: 5px;
+  left: 15px;
+  font-size: 1.2rem;
+  color: rgb(0, 242, 255);
+  z-index:20;
+  float: left;
+}
+
+.nav-container1 input[type="checkbox"]:checked ~ .menu-items {
+  transform: translateX(0);
+}
+
+.nav-container1 input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
+  transform: rotate(45deg);
+}
+
+.nav-container1 input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
+  transform: scaleY(0);
+}
+
+.nav-container1 input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
+  transform: rotate(-45deg);
+}
+body{
+  background-color: black;
+  color: red;
+}
+    </style>
+</html>

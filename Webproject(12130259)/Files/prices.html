@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Bookstore</title>
+<link rel="stylesheet" href="StylePages.css">
+<script src="javascript.js"></script>
+</head>
+<body>
+  <nav>
+		<div class="navbar">
+		  <div class="container1 nav-container1">
+			  <input class="checkbox" type="checkbox" name="" id="" />
+			  <div class="hamburger-lines">
+				<span class="line line1"></span>
+				<span class="line line2"></span>
+				<span class="line line3"></span>
+			  </div>  
+			<div class="logo">
+			  <h1>𝕭𝖔𝖔𝓴 𝕾𝖙𝖔𝖗𝖊</h1>
+			</div>
+			<div class="menu-items">
+			  <li><a href="index.html">Home</a></li>
+			  <li><a href="Register.html">Regester/signin</a></li>
+			  <li><a href="prices.html">prices</a></li>
+			  <li><a href="ConractUS.html">contact</a></li>
+			</div>
+		  </div>
+		</div>
+	  </nav>
+
+<h1>list of books</h1>
+<ul><li>kidnapped</li>
+  <li>treasure island</li>
+  <li>the kite runner</li>
+  <li>to kill a mockingbird</li>
+  <li>romeo and juliet</li>
+  <li>big little lies</li>
+  <li>silent patient</li>
+  <li>in the wood</li>
+  <li>harry potter and the order of the phoenix</li>
+  </ul>
+<input type="text" id="bookSearch" placeholder="Search for a book...">
+<button onclick="searchBook()">Search</button>
+<button onclick="calculatePrice()">press to calculate total</button>
+<ul id="bookList"></ul>
+<div id="totalPrice"></div>
+
+
+</body>
+<style>
+  body{background-color: salmon;}
+ul li{
+  color: brown;
+}
+</style>
+</html>
